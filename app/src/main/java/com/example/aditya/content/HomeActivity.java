@@ -56,12 +56,6 @@ public class HomeActivity extends ActionBarActivity  implements  LoaderManager.L
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-    }
-
     private void initViews() {
         mListView = (ListView) findViewById(R.id.listView);
         mEmployeeId = (EditText)findViewById(R.id.employee_id);
@@ -119,7 +113,7 @@ public class HomeActivity extends ActionBarActivity  implements  LoaderManager.L
                 return null;
         }
     }
-
+    
     public void insertIntoDb(View v){
         ContentValues employeeValues = new ContentValues();
         employeeValues.put(DataContract.EMPLOYEE_ID, mEmployeeId.getText().toString().trim());
