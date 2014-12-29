@@ -62,7 +62,7 @@ public class DataProvider extends ContentProvider {
          */
         sMimeTypes = new SparseArray<String>();
 
-        // Adds a URI "match" entry that maps picture URL content URIs to a numeric code
+        // Adds a URI "match" entry that maps employee name to a numeric code
         sUriMatcher.addURI(
                 DataContract.AUTHORITY,
                 DataContract.EMPLOYEE_TABLE_NAME,
